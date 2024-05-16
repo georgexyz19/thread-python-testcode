@@ -14,4 +14,5 @@ if __name__ == "__main__":
                         datefmt="%H:%M:%S")
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
-        executor.map(thread_function, range(3))
+        executor.map(thread_function, range(3))  
+        # change to range(5) to see results
